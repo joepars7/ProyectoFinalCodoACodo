@@ -4,104 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Funkoshop</title>
-    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
  <header> <!--Inicio Header-->
-        <nav class="navbar container">
-            <picture class="navbar__logo">
+        <nav>
+            <picture>
                 <a href="./index.html">
                     <img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                  </a>
             </picture>
-            <ul class="navbar__menu">
-             <li class="navbar__item with-submenu">
-                <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                <ul class="submenu">
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Funkos</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Remeras</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Llaveros</a>
-                    </li>
-                </ul> 
+
+             <li>
+                <a href="./pages/shop.html">SHOP</a>
             </li>
 
-             <li class="navbar__item">
-                <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+             <li>
+                <a href="./pages/contacto.html">CONTACTO</a>
             </li>
 
-             <li class="navbar__item">
-                <a class="navbar__link" href="./pages/login.html">LOGIN</a>
-             </li>
+             <li>
+                <a href="./pages/login.html">LOGIN</a>
+            </li>
 
-             <li class="navbar__item">
-                <a class="navbar__cart" href="./pages/cart.html">
+             <li>
+                <a href="./pages/cart.html">
                     <img src="/img/icons/cart-icon.svg" alt="icono de carri"></a>
             </li>
-        </ul>
         </nav>
  </header> <!--Fin Header-->
 
 <main>
-
-<section class="hero">
-<article class="hero__content container">
-    <h3 class="hero__title">Nuevos Ingresos</h3>
-    <p class="hero__text">Descubrí el próximo Funko Pop de tu colección</p>
-    <a class="hero__link" href="./pages/shop.html">Shop</a>
-</article>
-</section>
-
-<section>
-    <article>
-        <h3>STAR WARS & THE MANDALORIAN</h3>
-        <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-        <a href="./pages/shop.html">VER COLECCIÓN</a>
-    </article>
     <picture>
         <img src="./img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
     </picture>
-    
-</section>
 
-<section>
-    <article>
-        <h3>POKEMÓN INDIGO</h3>
-        <p>Atrapa todos los que puedas y disfrutá de una colección llena de amigos.</p>
-        <a href="./pages/shop.html">VER COLECCIÓN</a>
-    </article>
-    <picture>
-        <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable Funko de Vulpix de la serie Pokemón">
-    </picture>
-    
-</section>
+    <section>
 
-<section>
-    <article>
-        <h3>HARRY POTTER</h3>
-        <p>Revive los recuerdos de una saga llena de magia y encanto </p>
-        <a href="./pages/shop.html">VER COLECCIÓN</a>
-    </article>
-    <picture>
-        <img src="./img/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus de Snape de la película de Harry Potter">
-    </picture>
-    
-</section>
+     <article>
+        <p>STAR WARS</p>
+        <h3>BABY YODA BLUEBALL</h3>
+        <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+        <P>$ 1799,99</P>
+     </article>
 
-<section>
-    <h2>Últimos lanzamientos</h2>
-    <ul><li>
+     <article>
+         <div class="contador">
+            <span id="numero">0</span>
+            <div class="botones">
+              <button onclick="aumentar()">+</button>
+              <button onclick="disminuir()">-</button>
+             </div> 
+
+         <form action="index.js">
+             <input type="submit" value="Enviar">
+             <button type="submit">Enviar</button>
+         </form>
+         </div>
+
+     </article>
+
+     <article>
+        <a href="">
+            <p>Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p>
+        </a>
+     </article>
+
+    </section>
+
+    </section>
+     <h2>PRODUCTOS RELACIONADOS</h2>
+     <ul>
+        <li>
         <article>
             <a href="">
+            </div>
+                <h3>NUEVO</h3>
              <picture>
                <img src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
              </picture>
-
+            </div>
              <div>
                 <p>STAR WARS</p>
                 <h4>STORMTROOPER LIGHTSABER</h4>
@@ -110,14 +92,16 @@
              </div>
             </a>
         </article>
-    </li>
-    <li>
+     </li>
+     <li>
         <article>
             <a href="">
+                <div>
+                <h3>NUEVO</h3>
                 <picture>
                   <img src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
                 </picture>
-   
+                </div>
                 <div>
                    <p>POKEMÓN</p>
                    <h4>PIDGEOTTO</h4>
@@ -126,13 +110,16 @@
                 </div>
                </a>
         </article>
-    </li>
-    <li>
+     </li>
+     <li>
         <article>
             <a href="">
+                <div>
+                <h3>NUEVO</h3>
                 <picture>
                   <img src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
                 </picture>
+                </div>
    
                 <div>
                    <p>HARRY POTTER</p>
@@ -172,12 +159,12 @@
 
 </section>
 
-<p>All rights reserved 2022 - Funkoshop &copy;</p>
+<p>All rights reserved 2023 - Funkoshop &copy;</p>
 
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 
+    
 </body>
 </html>
