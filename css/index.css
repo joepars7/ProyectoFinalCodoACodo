@@ -1,5 +1,7 @@
+/* EXTERNALS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
-
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
 :root {
 /* Palette */
 --primary-solid: #FF3333;
@@ -366,4 +368,19 @@ display: block;
         opacity: 100%;
     }
 }
+
+iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+.glide__arrow--left {
+    left:0;
+}
+
+.glide__arrow--right {
+    right:0;
+}
+
 

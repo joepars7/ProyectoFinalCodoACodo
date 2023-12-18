@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Funkoshop</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
-
 </head>
 
 <body>
@@ -157,9 +154,9 @@
         </li>
      </ul>
     </div>
-    <div class="glide__arrows" data-glide-el="controls">
-        <button class="class="glide__arrow glide__arrow--left" data-glide-dir="<<">Start</button>
-        <button class="class="glide__arrow glide__arrow--right" data-glide-dir=">>">End</button>
+    <div class="glide__track" data-glide-el="track">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="ic:round-chevron-left"></iconify-icon></button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="ic:round-chevron-right"></iconify-icon></button>
       </div>
     </section>
 </main>
@@ -184,27 +181,11 @@
 
 <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
 
-
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-<script>
-  new Glide('.glide', {
-type: 'carousel',
-startAt: 0,
-perView: 3,
-gap: 30,
-breakpoint: {
-    991: {
-        perView: 2,
-    },
-    768: {
-        perView: 1,
-    },
-}
-}).mount();
-</script>
+<script src="./js/glide.js"></script>
 
 </body>
 </html>
