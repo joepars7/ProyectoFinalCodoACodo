@@ -1,11 +1,18 @@
 const express = require('express');
 const app = express();
+const methodOverride = require('method-override');
+
 const mainRoutes = require('./src/routes/mainRoutes')
 const shopRoutes = require('./src/routes/shopRoutes')
 const shopRoutes = require('./src/routes/adminRoutes')
 const shopRoutes = require('./src/routes/authRoutes')
 
+const PORT = 3004;
+
 app.use(express.static('public'));
+app.use(express.urlencoded());
+app.use(express.json())
+app.use(methodOverride('_method'));
 
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
