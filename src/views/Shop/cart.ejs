@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+
+<main>
+
+<section>
+<article>
+    <h3>Nuevos Ingresos</h3>
+    <p>Descubrí el próximo Funko Pop de tu colección</p>
+    <a href="./pages/shop.html">Shop</a>
+</article>
+</section>
+
+<section>
+    <tr>
+        <td><p>DETALLE DEL PRODUCTO</p></td>
+        <td><p>CANTIDAD</p></td>
+        <td><p>TOTAL</p></td>
+    </tr>
+    <tr>
+    </td>
+    <picture>
+        <img src="../../img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
+    </picture>
+
+    <article>
+        <h3>BABY YODA BLUE BALL</h3>
+        <p>STAR WARS</p>
+        <p>precio: $1.799.99</p>
+    </article>
+    <td>
+
+    <td>
+        <input type="number" value="1" min="1">
+        <button onclick="decrementar(this)">-</button>
+        <button onclick="incrementar(this)">+</button>
+      </td>
+      <td>$3599.98</td>
+    </tr>
+    
+</section>
+
+<section>
+    <picture>
+        <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de la serie Pokemón">
+    </picture>
+
+    <article>
+        <h3>PIDGEOTTO</h3>
+        <p>POKEMON.</p>
+        <p>Precio unitario: $ 1799,99</p>
+    </article>
+
+    <td>
+        <input type="number" value="1" min="1">
+        <button onclick="decrementar(this)">-</button>
+        <button onclick="incrementar(this)">+</button>
+      </td>
+      <td>$1.799.99</td>
+    
+    
+</section>
+
+</main>
+
+<%- include('../partials/footer') %>
+
+
+</body>
+</html>

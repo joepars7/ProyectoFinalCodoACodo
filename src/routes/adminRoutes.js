@@ -1,12 +1,19 @@
 const express = require('express');
 const router = express.Router();
-const adminControllers = require('../controllers/adminControllers');
+const {
+    admin, 
+    create, 
+    createAdmin, 
+    editIDView, 
+    editID, 
+    deleteID
+}= require('../controllers/adminControllers');
 
-router.get('/', adminControllers.admin);
-router.get('/create', adminControllers.create);
-router.post('/create', adminControllers.createAdmin);
-router.get('/edit/:id', adminControllers.editIDView);
-router.put('/edit/:id', adminControllers.editID);
-router.delete('/delete/:id', adminControllers.delete);
+router.get('/', admin);
+router.get('/create', create);
+router.post('/create', createAdmin);
+router.get('/edit/:id', editIDView);
+router.put('/edit/:id', editID);
+router.delete('/delete/:id', deleteID);
 
 module.exports = router;

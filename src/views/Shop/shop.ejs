@@ -8,92 +8,51 @@
 </head>
 
 <body>
-    <header> <!--Inicio Header-->
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="../../index.html">
-                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
-                 </a>
-            </picture>
-            <ul class="navbar__menu">
-             <li class="navbar__item with-submenu">
-                <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                <ul class="submenu">
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Funkos</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Remeras</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Llaveros</a>
-                    </li>
-                </ul> 
-            </li>
-
-             <li class="navbar__item">
-                <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
-            </li>
-
-             <li class="navbar__item">
-                <a class="navbar__link" href="../Admin/login.html">LOGIN</a>
-             </li>
-
-             <li class="navbar__item">
-                <a class="navbar__cart" href="cart.html">
-                    <img src="../../img/icons/cart-icon.svg" alt="icono de carri"></a>
-            </li>
-        </ul>
-        </nav>
- </header> <!--Fin Header-->
-
-<aside>
-    <div>
-        <form action="/buscar" method="GET">
-            <label for="busqueda">BUSCAR:</label>
-            <input type="text" id="busqueda" name="q" placeholder="Ingrese el nombre del producto" value="Item o categoría">
-            <button type="submit">Buscar</button>
-          </form>
-    </div>
-    <div>
-        <form action="index.js" method="GET"></form>
-        <label for="type">ORDENAR POR:</label>
-         <select name="type" id="type">
-            <option value="Mayor a menor">Mayor a menor</option>
-            <option value="Menor a Mayor">Menor a Mayor</option>
-            <option value="Ultimos lanzamientos">Últimos lanzamientos</option>
+    <%- include('../partials/header') %>
+    
+    <aside class="shop__filters filters">
+        <div class="filters__search">
+            <label  class="filters__title" for="search">BUSCAR</label>
+            <input type="text" name="search" id="search" placeholder="item o categoría">
+        </div>
+        <div class="filters__order">
+            <label  class="filters__title" for="orderby">ORDERNAR POR</label>
+            <select name="orderby" id="orderby">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+                <option value="desc">Mayor precio</option>
+                <option value="asc">Menor precio</option>
             </select>
-        </form>
-    </div>
-    <div>
-        <h2>PRECIO</h2>
-        <form action="/buscar" method="GET">
-            <label for="min">MIN:</label>
-            <input type="text" id="min" name="q" value="0">
-            <button type="submit">Buscar</button>
-        </form>
-        <form action="/buscar" method="GET">
-            <label for="max">- MAX:</label>
-            <input type="text" id="max" name="q" value="0">
-            <button type="submit">Buscar</button>
-        </form>
-    </div>
-    <div>
-        <form action="index.js" method="GET">
-            <label for="checkbox">FILTRAR:</label>
-            <input type="checkbox" name="filter" id="news"
-           value="news">
-            <label for="">NUEVOS</label>
-            <input type="checkbox" name="filter" id="offers" value="offers">
-            <label for="">OFERTAS</label>
-            <input type="checkbox" name="filters" id="specials"
-           value="specials">
-            <label for="">EDICIÓN ESPECIAL</label>
-            <input type="checkbox" name="filters" id="favs" value="favs">
-            <label for="">FAVORITOS</label>
-           </form>
-    </div>
-</aside>
+        </div>
+        <div class="filters__price">
+            <span class="filters__title" >PRECIO</span>
+            <div>
+                <label for="min">MIN</label>
+                <input type="text" name="min" id="min" placeholder="0">
+                <label for="max">- MAX</label>
+                <input type="text" name="max" id="max" placeholder="0">
+            </div>
+        </div>
+        <div class="filters__checks">
+            <span class="filters__title" for="filter">FILTRAR</span>
+            <div>
+                <input type="checkbox" name="filter" id="news" value="news">
+                <label for="">NUEVOS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="offers" value="offers">
+                <label for="">OFERTAS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="specials" value="specials">
+                <label for="">EDICIÓN ESPECIAL</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="favs" value="favs">
+                <label for="">FAVORITOS</label>
+            </div>
+        </div>
+    </aside>
 
 <main>
 
@@ -274,30 +233,7 @@
     </section>
 </main>
 
-<footer class="footer">
-    <nav class="navbar container">
-        <ul class="navbar__item">
-            <li class="navbar__item">
-                <a class="navbar__link" href="./pages/shop.html">SHOP</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="../pages/login.html">INGRESAR</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
-            </li>
-        </ul>
-        <picture>
-            <img src="../../img/branding/isotype.svg" alt="isotipo de la marca Funkoshop">
-        </picture>
-    </nav>
+<%- include('../partials/footer') %>
 
-<p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-
-
-</footer>
-
-
-    
 </body>
 </html>
