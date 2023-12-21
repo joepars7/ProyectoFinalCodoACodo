@@ -27,6 +27,7 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
+    color:#FFFFFF
  }
 
  .navbar__link:hover {
@@ -54,6 +55,7 @@ display: block;
     background-color: var(--dark-bg-solid);
     z-index: 3;
     align-items: start;
+    color:#FFFFFF
 }
 
 .submenu__link {
