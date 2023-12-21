@@ -112,7 +112,9 @@ const shopControllers = {
 
         ]
 
-        res.render(path.resolve(__dirname, '../views/shop/shop.ejs'))
+        res.render(path.resolve(__dirname, '../views/shop/shop.ejs'),{
+            items: data
+        })
     },
     itemID: (req, res) => {
         res.render(path.resolve(__dirname, '../views/shop/item.ejs'))
