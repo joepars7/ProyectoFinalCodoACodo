@@ -18,6 +18,10 @@
     gap: var(--spacing-24);
 }
 
+.glide__arrow {
+    color:black
+}
+
 .card-item__cover img {
     animation: fade .7s;
 }
