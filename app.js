@@ -8,7 +8,7 @@ const shopRoutes = require('./src/routes/shopRoutes')
 const adminRoutes = require('./src/routes/adminRoutes')
 const authRoutes = require('./src/routes/authRoutes')
 
-const PORT = 3004;
+const PORT = 3000;
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './src/views'));
