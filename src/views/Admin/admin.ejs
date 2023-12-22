@@ -30,9 +30,9 @@
                 <% items.forEach(item => { %>
                   <div class="admin-table__row">
                       <p><%= item.product_id %></p>
-                      <p><%= item.sku %></p>
+                      <p><%= item.product_SKU %></p>
                       <p><%= item.product_name %></p>
-                      <p><%= item.category_name %></p>
+                      <p><%= item.licence_name %></p>
                       <a href="/admin/edit/<%= item.product_id %>"><iconify-icon icon="mdi:pencil" style="color: #1d84b5;"></iconify-icon></a>
                       <form action="/admin/delete/<%= item.product_id %>?_method=DELETE" method="POST">
                           <button class="admin-table__btn-delete" type="submit">

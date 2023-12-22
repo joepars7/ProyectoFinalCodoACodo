@@ -12,7 +12,7 @@ const adminControllers = {
                 product_description: "Figura colleccionable Star Wars",
                 product_price: 1799.99,
                 dues: 3,
-                product_SKU: "SW001001",
+                product_SKU: "STW001001",
                 img_front: "/img/star-wars/trooper-1.webp",
                 img_back: "/img/star-wars/trooper-box.webp",
 
@@ -38,7 +38,7 @@ const adminControllers = {
                 product_description: "Figura colleccionable Harry Potter",
                 product_price: 1799.99,
                 dues: 3,
-                product_SKU: "HP001001",
+                product_SKU: "HPT001001",
                 img_front: "/img/harry-potter/luna-1.webp",
                 img_back: "/img/harry-potter/luna-box.webp",
             },
