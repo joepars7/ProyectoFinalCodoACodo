@@ -101,24 +101,24 @@
 .slider-item__licence {
     font-size: var(--font-xsmall);
     font-weight: 500;
-    padding:10px;
+    padding:2px;
 }
 
 .slider-item__name {
     font-size: var(--font-small);
     font-weight: 700;
-    padding:10px;
+    padding:2px;
 }
 
 .slider-item__price {
     font-size: var(--font-small);
     font-weight: 400;
-    padding:10px;
+    padding:2px;
 }
 
 .slider-item__promo {
     font-size: var(--font-xsmall);
     font-weight: 700;
     color: var(--secondary-solid);
-    padding:10px;
+    padding:2px;
 }
