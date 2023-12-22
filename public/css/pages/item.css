@@ -71,3 +71,54 @@
 .item__promo a {
     text-decoration: underline;
 }
+.card-item__licence{
+    font-size: var(--font-medium);
+    font-weight: 500;
+}
+.card-item__name {
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+
+.card-item__description {
+    font-size: var(--font-large);
+    font-weight: 400;
+}
+
+.card-item__price {
+ font-size: var(--font-jumbo);
+ font-weight: 400;
+}
+
+.slider__title {
+    font-size: var(--font-display);
+}
+
+.slider-item__content {
+    line-height: normal;
+}
+
+.slider-item__licence {
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+    padding:10px;
+}
+
+.slider-item__name {
+    font-size: var(--font-small);
+    font-weight: 700;
+    padding:10px;
+}
+
+.slider-item__price {
+    font-size: var(--font-small);
+    font-weight: 400;
+    padding:10px;
+}
+
+.slider-item__promo {
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+    color: var(--secondary-solid);
+    padding:10px;
+}
